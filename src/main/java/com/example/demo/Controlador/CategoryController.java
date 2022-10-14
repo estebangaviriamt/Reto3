@@ -28,7 +28,7 @@ public class CategoryController {
     public List<Category> getAll(){
         return categoryService.getAll();
     }
-    //hola
+    
     @GetMapping("/{id}")
     public Optional<Category> getCategory(@PathVariable("id") int id){
         return categoryService.getCategory(id);
